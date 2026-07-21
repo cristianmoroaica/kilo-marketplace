@@ -1,0 +1,15 @@
+id: bountyverdict
+name: BountyVerdict Agent Decision Tools
+description: Six read-only x402 tools that return evidence-linked decisions for public GitHub bounties, coding-agent instructions, Actions failures, flaky retries, skill security, and MCP tool-catalog changes. Invalid input is rejected before payment.
+author: Cristian Moroaica
+url: https://github.com/cristianmoroaica/bountyverdict
+category: development
+prerequisites:
+  - An x402-compatible wallet with Base USDC is required only for paid tool calls; the server requires no account or API key
+content:
+  - name: Remote Streamable HTTP
+    content: |
+      {
+        "type": "streamable-http",
+        "url": "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp"
+      }
