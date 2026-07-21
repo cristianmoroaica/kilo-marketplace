@@ -1,11 +1,13 @@
 id: bountyverdict
 name: BountyVerdict Agent Decision Tools
-description: Six read-only x402 tools that return evidence-linked decisions for public GitHub bounties, coding-agent instructions, Actions failures, flaky retries, skill security, and MCP tool-catalog changes. Invalid input is rejected before payment.
+description: Six read-only x402 tools that return evidence-linked decisions for GitHub bounty eligibility, bounty portfolio ranking, coding-agent instruction and harness audits, GitHub Actions failures, flaky retries, and MCP tool-catalog changes. Invalid input is rejected before payment.
 author: Cristian Moroaica
 url: https://github.com/cristianmoroaica/bountyverdict
 category: development
 prerequisites:
-  - An x402-compatible wallet with Base USDC is required only for paid tool calls; the server requires no account or API key
+  - An x402-aware MCP client can inspect tool schemas and receive an exact payment requirement directly from the server
+  - Completing a paid call requires a separately configured and explicitly authorized x402-compatible wallet funded with Base USDC; installing this MCP in Kilo does not provide or authorize a wallet
+  - The BountyVerdict server itself requires no account, API key, or secret
 content:
   - name: Remote Streamable HTTP
     content: |
