@@ -13,5 +13,5 @@ content:
     content: |
       {
         "type": "streamable-http",
-        "url": "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp"
+        "url": "https://bountyverdict-agent-production.mimirslab.workers.dev/mcp?source=kilo-marketplace"
       }
